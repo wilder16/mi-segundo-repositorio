@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        //Determinar si la pesona es mayor de edad a través de un condicional simple
+
+        //Se declara una variable edad y se le asocia un valor ingresado por el usuario. 
+        var edad = prompt ("Por favor ingrese la edad de la persona");
+        //Datos de proceso
+        //El metodo Number permite verificar el formato valido de la variable edad (Un valor númerico)
+        if (Number(edad) == edad)
+        {
+            // Decisión de si es mayor de edad
+            if(edad >= 18)
+            {
+                //Dato de salida si se cumple la condición 
+                document.write("La persona es mayor de edad");
+            }
+            else
+            {
+                //Dato de salida si no se cumple la condición
+                document.write("La persona es menor de edad");
+            }
+        }
+        else
+        {
+            alert("Ingrese un valor valido")
+        }  
+    </script>
+    
+</body>
+</html>

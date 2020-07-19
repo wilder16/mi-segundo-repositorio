@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Declaración de una escruptura repetitiva evaluando un valor númerico en ella  
+        do
+        { 
+            var nota = prompt("Introduce tu nota");
+            //El metodo Number permite verificar el formato valido de la variable edad (Un valor númerico)
+            if (Number(nota) == nota)
+            {
+                if((nota >= 0) && (nota <= 10))
+                {
+                    //Si la nota es menor que 3 el estudiante es muy deficiente 
+                    if(nota <= 3)
+                    {
+                        alert("El estudiante es muy deficiente");
+                    }
+                    else if (nota > 3  && nota <= 5)
+                    {
+                        alert("El estudiante es insuficiente");
+                    }
+                    else if (nota > 5 && nota <= 6)
+                    {
+                        alert("El estudiante es suficiente");
+                    }
+                    else if(nota > 6 && nota <= 7)
+                    {
+                        alert("El estudiante es bueno");
+                    }
+                    else if(nota > 7  && nota <= 9)
+                    {
+                        alert("El estudiante es notable");
+                    }
+                    else
+                    {
+                        alert("El estudiante es sobresaliente");
+                    }
+                }
+                else
+                {   
+                    //Se ejecuta esta parte cuando el usuario ingresa una nota fuera del rando 0-10 
+                    alert("Ingresaste una nota erronea");
+                }
+            }
+            else
+            {
+                //Se ejecuta esta parte cuando el usuario ingresa un valor distinto a un numero 
+                if(nota != undefined)
+                {
+                    alert("Introduce un numero valido");
+                }
+            }
+        }while(nota != undefined);
+
+    </script>
+</body>
+</html>

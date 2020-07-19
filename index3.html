@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        //Concepto de acumulador y contador 
+        //Sumatorias de números pedidos por el usuario  
+        
+        //Declaración de variables
+        //La variable numero es de entrada y la suma es de salida es el acumulador
+        var suma = 0;
+        do
+        {
+            //Solicita un número al usuario 
+            var numero = prompt("Por favor digite un número");
+            //Condición para validar si el usuario ingreso un numero o no 
+            if (Number(numero) == numero)
+            {
+                //Esto se hace para validar que solo se tengan encuenta los numeros enteros
+                numero = Number(numero);
+                //Esta linea es lo mismo que hacer suma = suma + numero 
+                suma += numero;
+            }
+            else
+            {
+               if(numero != undefined)
+                {
+                    alert("Introduce un numero valido");
+                }
+            }
+        }while(numero != undefined);
+
+        //Datos de salida
+        document.write("La suma de los valores ingresado es: " + suma);
+    </script>
+</body>
+</html>
